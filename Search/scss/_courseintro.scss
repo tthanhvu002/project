@@ -1,0 +1,127 @@
+.course-intro{
+    padding-top: 91px;
+    padding-bottom: 176px;
+    background-color: #30363D;
+
+    &__heading{
+        font-size: 44px;
+        line-height: calc(56/44);
+        font-weight: 500;
+        color: #fff;
+        font-family: $crimson;
+        text-align: center;
+        margin-bottom: 81px;
+    }
+    &__list{
+        display: flex;
+        gap: 25px !important;
+        position: relative;
+    }
+    &__item{
+        position: relative;
+        max-width: 330px;
+        .img-wrap{
+            height: 330px;
+
+        }
+        img{
+            max-height: 100%;
+        }
+        &-overlay{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;right: 0;
+            background: #3C444D;
+            background: linear-gradient( 180deg, transparent 0%, #3C444D);
+        }
+        &-date{
+            position: absolute;
+            background: linear-gradient(277.43deg, #7DFFD3 0.52%, #29CCD6 20.82%, #150099 99.87%);
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+            left: 0;
+            top: 20px;
+            color: #fff;
+            padding: 13px 20px;
+        }
+        &-content{
+            position: absolute;
+            bottom: 20px;
+            margin-left: 30px;
+            color: #fff;
+
+        }
+        &-cate{
+            font-size: 10px;
+            line-height: calc(12/10);
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        &-name{
+            font-size: 24px;
+            max-width: 212px;
+            line-height: calc(28/24);
+            color: #fff;
+            font-family: $crimson;
+            margin-bottom: 10px;
+        }
+        &-lecture{
+            font-size: 24px;
+            line-height: calc(28/24);
+            opacity: 0.7;
+            font-family: $crimson;
+        }
+        &-price{
+            display: flex;
+            gap: 8px !important; 
+            align-items: center;
+            p{
+                font-weight: 600;
+                font-size: 21px;
+                line-height: 28px;
+            }
+            span{
+                font-size: 14px;
+                line-height: 28px;
+                text-decoration: line-through;
+            }
+        }
+    }
+    .slick-track{
+        display: flex;
+        padding: 20px 0;
+        gap: 25px !important;
+    }
+    .slick-dots{
+        bottom: -100px;
+    }
+    .slick-slide{
+        flex: 20%;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .course-intro{
+        .slick-dots{
+            transform: translateX(-50%);
+        }
+        .slick-slide{
+            flex: 10%;
+        }
+        .slick-track{
+            margin-left: 14px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1730px) {
+    .course-intro{
+        .slick-track{
+            margin-left: -66px;
+        }
+    }
+}

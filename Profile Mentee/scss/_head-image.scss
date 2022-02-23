@@ -1,0 +1,11 @@
+.head-image{
+    background: linear-gradient(277.43deg, #7DFFD3 0.52%, #29CCD6 20.82%, #150099 99.87%);
+    height: 466px;
+    padding-top: 55px;
+    &__heading{
+        font-size: 44px;
+        font-family: $crimson;
+        color: #fff;
+        text-align: center;
+    }
+}

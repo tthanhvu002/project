@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- bs -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- slick-slider -->
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+      <!-- scss -->
+      <link rel="stylesheet" href="../scss/css/app.css">
+      <link rel="stylesheet" href="./scss/css/app.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-container">
+                    <div class="header__logo">
+                        <img src="../img/header-logo.png" alt="logo">
+                    </div>
+                    <div class="header__nav">
+                        <ul class="menu">
+                            <li class="menu-item">
+                              <a href="#" class="menu-link">Tìm kiếm</a>
+                              <div class="line"></div>
+                            </li>
+                            <li class="menu-item ">
+                            <a href="#" class="menu-link">Về mentor</a>
+                            <div class="line active"></div>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Đăng nhập để dạy</a>
+                                <div class="line"></div>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Đăng nhập để học</a>
+                                <div class="line"></div>
+                            </li>
+                        </ul>
+                        <div class="menu-toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <a class="header__btn">
+                            Đăng ký
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="head-image">
+                <div class="container">
+                    <div class="head-image-container">
+                        <div class="head-image__img">
+                            <img src="../img/head-image.png" alt="">
+                        </div>
+                        <div class="head-image__overlay">
+    
+                        </div>
+                        <div class="head-image__content">
+                            <h1 class="head-image__heading">
+                                KHÁM PHÁ KHÓA HỌC
+                            </h1>
+                            <div class="search-box">
+                                <input type="text" placeholder="Nhập từ khoá tìm kiếm">
+                                <img srcset="./img/search.png 2x" alt="">
+                            </div>
+                            <div class="checkbox-group">
+                                <div class="form-group">
+                                    <input type="checkbox" id="html">
+                                    <label for="html">Khoá học</label>
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="checkbox" id="css">
+                                    <label for="css">Tư vấn 1:1</label>
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="checkbox" id="javascript">
+                                    <label for="javascript">Giảng viên </label>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="course">
+                <div class="container">
+                    <div class="course-container">
+                        <div class="section__heading">Khoá Học Nổi Bật</div>
+                        <p class="section__text">
+                            Có rất nhiều biến thể của Lorem Ipsum mà bạn có thể tìm thấy, nhưng đa số được biến đổi bằng cách thêm các yếu tố hài hước, các từ ngẫu nhiên có khi không có vẻ gì là có ý nghĩa. 
+                        </p>
+                        <div class="course__list row" id="slider-1">
+                            <div class="course__item col-3">
+                                <div class="course__item-img">
+                                    <img src="./img/course.png" alt="">
+                                </div>
+                                <div class="course__item-header">
+                                    <div class="course__item-countdown">
+                                        <p class="primary-color course__item-time__text">thời gian:</p>
+                                        <p class="sc-color course__item-time__text">1 tháng - từ 25/01/2022</p>
+                                    </div>
+                                    <div>
+                                        <img srcset="./img/heart.png 2x" alt="">
+                                    </div>
+                                </div>
+                                <div class="course__item-info">
+                                    <p class="course__item-type">
+                                        tư vấn 1:1 - bc0.1 - cơ bản
+                                    </p>
+                                    <h3 class="course__item-name">
+                                        Body Code 1 - Nền Tảng Kết Nối Cơ Thể
+                                    </h3>
+                                    <div class="course__item-coach">
+                                        <img srcset="./img/courseavt.png 2x" alt="">
+                                        <p>Hồ Ngô Hương Giang</p>
+                                    </div>
+                                    <p class="course__item-desc">
+                                        Trái với quan điểm chung của số đông, Lorem Ipsum không phải chỉ...
+                                    </p>
+                                    <div class="course__item-rating">
+                                        <div class="course__item-rating__star">
+                                            <img src="./img/star.png" alt="">
+                                            <span>4 (1023)</span>
+                                        </div>
+                                        <div class="course__item-rating-number">
+    
+                                            <img srcset="./img/number.png 2x" alt="">
+                                            <span>2000</span>
+                                        </div>
+                                    </div>
+                                    <p class="course__item-price">
+                                        300.000đ
+                                    </p>
+                                    <div class="course__item-countdown">
+                                        <p class="primary-color">Hạn ghi danh còn:</p>
+                                        <p class="sc-color">5 ngày 20 giờ</p>
+                                    </div>
+                                    <a class="course__item-btn">
+                                        chọn học
+                                    </a>
+                                </div>
+                                <h3 class="course__item-category">sống khoẻ</h3>
+                            </div>
+                            <div class="course__item col-3">
+                                <div class="course__item-img">
+                                    <img src="./img/course.png" alt="">
+                                </div>
+                                <div class="course__item-header">
+                                    <div class="course__item-countdown">
+                                        <p class="primary-color course__item-time__text">thời gian:</p>
+                                        <p class="sc-color course__item-time__text">1 tháng - từ 25/01/2022</p>
+                                    </div>
+                                    <div>
+                                        <img srcset="./img/heart.png 2x" alt="">
+                                    </div>
+                                </div>
+                                <div class="course__item-info">
+                                    <p class="course__item-type">
+                                        tư vấn 1:1 - bc0.1 - cơ bản
+                                    </p>
+                                    <h3 class="course__item-name">
+                                        Body Code 1 - Nền Tảng Kết Nối Cơ Thể
+                                    </h3>
+                                    <div class="course__item-coach">
+                                        <img srcset="./img/courseavt.png 2x" alt="">
+                                        <p>Hồ Ngô Hương Giang</p>
+                                    </div>
+                                    <p class="course__item-desc">
+                                        Trái với quan điểm chung của số đông, Lorem Ipsum không phải chỉ...
+                                    </p>
+                                    <div class="course__item-rating">
+                                        <div class="course__item-rating__star">
+                                            <img src="./img/star.png" alt="">
+                                            <span>4 (1023)</span>
+                                        </div>
+                                        <div class="course__item-rating-number">
+    
+                                            <img srcset="./img/number.png 2x" alt="">
+                                            <span>2000</span>
+                                        </div>
+                                    </div>
+                                    <p class="course__item-price">
+                                        300.000đ
+                                    </p>
+                                    <div class="course__item-countdown">
+                                        <p class="primary-color">Hạn ghi danh còn:</p>
+                                        <p class="sc-color">5 ngày 20 giờ</p>
+                                    </div>
+                                    <a class="course__item-btn">
+                                        chọn học
+                                    </a>
+                                </div>
+                                <h3 class="course__item-category">sống khoẻ</h3>
+                            </div><div class="course__item col-3">
+                                <div class="course__item-img">
+                                    <img src="./img/course.png" alt="">
+                                </div>
+                                <div class="course__item-header">
+                                    <div class="course__item-countdown">
+                                        <p class="primary-color course__item-time__text">thời gian:</p>
+                                        <p class="sc-color course__item-time__text">1 tháng - từ 25/01/2022</p>
+                                    </div>
+                                    <div>
+                                        <img srcset="./img/heart.png 2x" alt="">
+                                    </div>
+                                </div>
+                                <div class="course__item-info">
+                                    <p class="course__item-type">
+                                        tư vấn 1:1 - bc0.1 - cơ bản
+                                    </p>
+                                    <h3 class="course__item-name">
+                                        Body Code 1 - Nền Tảng Kết Nối Cơ Thể
+                                    </h3>
+                                    <div class="course__item-coach">
+                                        <img srcset="./img/courseavt.png 2x" alt="">
+                                        <p>Hồ Ngô Hương Giang</p>
+                                    </div>
+                                    <p class="course__item-desc">
+                                        Trái với quan điểm chung của số đông, Lorem Ipsum không phải chỉ...
+                                    </p>
+                                    <div class="course__item-rating">
+                                        <div class="course__item-rating__star">
+                                            <img src="./img/star.png" alt="">
+                                            <span>4 (1023)</span>
+                                        </div>
+                                        <div class="course__item-rating-number">
+    
+                                            <img srcset="./img/number.png 2x" alt="">
+                                            <span>2000</span>
+                                        </div>
+                                    </div>
+                                    <p class="course__item-price">
+                                        300.000đ
+                                    </p>
+                                    <div class="course__item-countdown">
+                                        <p class="primary-color">Hạn ghi danh còn:</p>
+                                        <p class="sc-color">5 ngày 20 giờ</p>
+                                    </div>
+                                    <a class="course__item-btn">
+                                        chọn học
+                                    </a>
+                                </div>
+                                <h3 class="course__item-category">sống khoẻ</h3>
+                            </div><div class="course__item col-3">
+                                <div class="course__item-img">
+                                    <img src="./img/course.png" alt="">
+                                </div>
+                                <div class="course__item-header">
+                                    <div class="course__item-countdown">
+                                        <p class="primary-color course__item-time__text">thời gian:</p>
+                                        <p class="sc-color course__item-time__text">1 tháng - từ 25/01/2022</p>
+                                    </div>
+                                    <div>
+                                        <img srcset="./img/heart.png 2x" alt="">
+                                    </div>
+                                </div>
+                                <div class="course__item-info">
+                                    <p class="course__item-type">
+                                        tư vấn 1:1 - bc0.1 - cơ bản
+                                    </p>
+                                    <h3 class="course__item-name">
+                                        Body Code 1 - Nền Tảng Kết Nối Cơ Thể
+                                    </h3>
+                                    <div class="course__item-coach">
+                                        <img srcset="./img/courseavt.png 2x" alt="">
+                                        <p>Hồ Ngô Hương Giang</p>
+                                    </div>
+                                    <p class="course__item-desc">
+                                        Trái với quan điểm chung của số đông, Lorem Ipsum không phải chỉ...
+                                    </p>
+                                    <div class="course__item-rating">
+                                        <div class="course__item-rating__star">
+                                            <img src="./img/star.png" alt="">
+                                            <span>4 (1023)</span>
+                                        </div>
+                                        <div class="course__item-rating-number">
+    
+                                            <img srcset="./img/number.png 2x" alt="">
+                                            <span>2000</span>
+                                        </div>
+                                    </div>
+                                    <p class="course__item-price">
+                                        300.000đ
+                                    </p>
+                                    <div class="course__item-countdown">
+                                        <p class="primary-color">Hạn ghi danh còn:</p>
+                                        <p class="sc-color">5 ngày 20 giờ</p>
+                                    </div>
+                                    <a class="course__item-btn">
+                                        chọn học
+                                    </a>
+                                </div>
+                                <h3 class="course__item-category">sống khoẻ</h3>
+                            </div><div class="course__item col-3">
+                                <div class="course__item-img">
+                                    <img src="./img/course.png" alt="">
+                                </div>
+                                <div class="course__item-header">
+                                    <div class="course__item-countdown">
+                                        <p class="primary-color course__item-time__text">thời gian:</p>
+                                        <p class="sc-color course__item-time__text">1 tháng - từ 25/01/2022</p>
+                                    </div>
+                                    <div>
+                                        <img srcset="./img/heart.png 2x" alt="">
+                                    </div>
+                                </div>
+                                <div class="course__item-info">
+                                    <p class="course__item-type">
+                                        tư vấn 1:1 - bc0.1 - cơ bản
+                                    </p>
+                                    <h3 class="course__item-name">
+                                        Body Code 1 - Nền Tảng Kết Nối Cơ Thể
+                                    </h3>
+                                    <div class="course__item-coach">
+                                        <img srcset="./img/courseavt.png 2x" alt="">
+                                        <p>Hồ Ngô Hương Giang</p>
+                                    </div>
+                                    <p class="course__item-desc">
+                                        Trái với quan điểm chung của số đông, Lorem Ipsum không phải chỉ...
+                                    </p>
+                                    <div class="course__item-rating">
+                                        <div class="course__item-rating__star">
+                                            <img src="./img/star.png" alt="">
+                                            <span>4 (1023)</span>
+                                        </div>
+                                        <div class="course__item-rating-number">
+    
+                                            <img srcset="./img/number.png 2x" alt="">
+                                            <span>2000</span>
+                                        </div>
+                                    </div>
+                                    <p class="course__item-price">
+                                        300.000đ
+                                    </p>
+                                    <div class="course__item-countdown">
+                                        <p class="primary-color">Hạn ghi danh còn:</p>
+                                        <p class="sc-color">5 ngày 20 giờ</p>
+                                    </div>
+                                    <a class="course__item-btn">
+                                        chọn học
+                                    </a>
+                                </div>
+                                <h3 class="course__item-category">sống khoẻ</h3>
+                            </div>
+                            <div class="course__item col-3">
+                                <div class="course__item-img">
+                                    <img src="./img/course.png" alt="">
+                                </div>
+                                <div class="course__item-header">
+                                    <div class="course__item-countdown">
+                                        <p class="primary-color course__item-time__text">thời gian:</p>
+                                        <p class="sc-color course__item-time__text">1 tháng - từ 25/01/2022</p>
+                                    </div>
+                                    <div>
+                                        <img srcset="./img/heart.png 2x" alt="">
+                                    </div>
+                                </div>
+                                <div class="course__item-info">
+                                    <p class="course__item-type">
+                                        tư vấn 1:1 - bc0.1 - cơ bản
+                                    </p>
+                                    <h3 class="course__item-name">
+                                        Body Code 1 - Nền Tảng Kết Nối Cơ Thể
+                                    </h3>
+                                    <div class="course__item-coach">
+                                        <img srcset="./img/courseavt.png 2x" alt="">
+                                        <p>Hồ Ngô Hương Giang</p>
+                                    </div>
+                                    <p class="course__item-desc">
+                                        Trái với quan điểm chung của số đông, Lorem Ipsum không phải chỉ...
+                                    </p>
+                                    <div class="course__item-rating">
+                                        <div class="course__item-rating__star">
+                                            <img src="./img/star.png" alt="">
+                                            <span>4 (1023)</span>
+                                        </div>
+                                        <div class="course__item-rating-number">
+    
+                                            <img srcset="./img/number.png 2x" alt="">
+                                            <span>2000</span>
+                                        </div>
+                                    </div>
+                                    <p class="course__item-price">
+                                        300.000đ
+                                    </p>
+                                    <div class="course__item-countdown">
+                                        <p class="primary-color">Hạn ghi danh còn:</p>
+                                        <p class="sc-color">5 ngày 20 giờ</p>
+                                    </div>
+                                    <a class="course__item-btn">
+                                        chọn học
+                                    </a>
+                                </div>
+                                <h3 class="course__item-category">sống khoẻ</h3>
+                            </div>
+                            <div class="course__item col-3">
+                                <div class="course__item-img">
+                                    <img src="./img/course.png" alt="">
+                                </div>
+                                <div class="course__item-header">
+                                    <div class="course__item-countdown">
+                                        <p class="primary-color course__item-time__text">thời gian:</p>
+                                        <p class="sc-color course__item-time__text">1 tháng - từ 25/01/2022</p>
+                                    </div>
+                                    <div>
+                                        <img srcset="./img/heart.png 2x" alt="">
+                                    </div>
+                                </div>
+                                <div class="course__item-info">
+                                    <p class="course__item-type">
+                                        tư vấn 1:1 - bc0.1 - cơ bản
+                                    </p>
+                                    <h3 class="course__item-name">
+                                        Body Code 1 - Nền Tảng Kết Nối Cơ Thể
+                                    </h3>
+                                    <div class="course__item-coach">
+                                        <img srcset="./img/courseavt.png 2x" alt="">
+                                        <p>Hồ Ngô Hương Giang</p>
+                                    </div>
+                                    <p class="course__item-desc">
+                                        Trái với quan điểm chung của số đông, Lorem Ipsum không phải chỉ...
+                                    </p>
+                                    <div class="course__item-rating">
+                                        <div class="course__item-rating__star">
+                                            <img src="./img/star.png" alt="">
+                                            <span>4 (1023)</span>
+                                        </div>
+                                        <div class="course__item-rating-number">
+    
+                                            <img srcset="./img/number.png 2x" alt="">
+                                            <span>2000</span>
+                                        </div>
+                                    </div>
+                                    <p class="course__item-price">
+                                        300.000đ
+                                    </p>
+                                    <div class="course__item-countdown">
+                                        <p class="primary-color">Hạn ghi danh còn:</p>
+                                        <p class="sc-color">5 ngày 20 giờ</p>
+                                    </div>
+                                    <a class="course__item-btn">
+                                        chọn học
+                                    </a>
+                                </div>
+                                <h3 class="course__item-category">sống khoẻ</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="course-intro">
+                <div class="course-intro-container">
+                    <h1 class="course-intro__heading">
+                        Khóa Học Mới / Sắp Khai Giảng
+                    </h1>
+                    <div class="course-intro__list">
+                        <div class="course-intro__item">
+                            <div class="course-intro__item-overlay">
+                                <div class="course-intro__item-content">
+                                    <h3 class="course-intro__item-cate">Category | loại khóa</h3>
+                                    <h2 class="course-intro__item-name">
+                                        Lorem Ipsum dolor sit amet consectetur
+                                    </h2>
+                                    <p class="course-intro__item-lecture">Tên Giảng Viên</p>
+                                    <div class="course-intro__item-price">
+                                        <p>500.000 đ</p>
+                                        <span>1.500.000 đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                                    <div class="img-wrap">
+                                                                                                            <img src="./img/ig1.png" alt="">
+                                    </div>                            
+                            <div class="course-intro__item-date">
+                                25/01/2021
+                            </div>
+                        </div>
+                        <div class="course-intro__item">
+                            <div class="course-intro__item-overlay">
+                                <div class="course-intro__item-content">
+                                    <h3 class="course-intro__item-cate">Category | loại khóa</h3>
+                                    <h2 class="course-intro__item-name">
+                                        Lorem Ipsum dolor sit amet consectetur
+                                    </h2>
+                                    <p class="course-intro__item-lecture">Tên Giảng Viên</p>
+                                    <div class="course-intro__item-price">
+                                        <p>500.000 đ</p>
+                                        <span>1.500.000 đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                                    <div class="img-wrap">
+                                                                                                            <img src="./img/im2.png" alt="">
+                                    </div>                            
+                            <div class="course-intro__item-date">
+                                25/01/2021
+                            </div>  
+                        </div>
+                        <div class="course-intro__item">
+                            <div class="course-intro__item-overlay">
+                                <div class="course-intro__item-content">
+                                    <h3 class="course-intro__item-cate">Category | loại khóa</h3>
+                                    <h2 class="course-intro__item-name">
+                                        Lorem Ipsum dolor sit amet consectetur
+                                    </h2>
+                                    <p class="course-intro__item-lecture">Tên Giảng Viên</p>
+                                    <div class="course-intro__item-price">
+                                        <p>500.000 đ</p>
+                                        <span>1.500.000 đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                                    <div class="img-wrap">
+                                                                                                            <img src="./img/im3.png" alt="">
+                                    </div>                            
+                            <div class="course-intro__item-date">
+                                25/01/2021
+                            </div>
+                        </div>
+                        <div class="course-intro__item">
+                            <div class="course-intro__item-overlay">
+                                <div class="course-intro__item-content">
+                                    <h3 class="course-intro__item-cate">Category | loại khóa</h3>
+                                    <h2 class="course-intro__item-name">
+                                        Lorem Ipsum dolor sit amet consectetur
+                                    </h2>
+                                    <p class="course-intro__item-lecture">Tên Giảng Viên</p>
+                                    <div class="course-intro__item-price">
+                                        <p>500.000 đ</p>
+                                        <span>1.500.000 đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                                    <div class="img-wrap">
+                                                                                                            <img src="./img/im4.png" alt="">
+                                    </div>                            
+                            <div class="course-intro__item-date">
+                                25/01/2021
+                            </div>
+                        </div>
+                        <div class="course-intro__item">
+                            <div class="course-intro__item-overlay">
+                                <div class="course-intro__item-content">
+                                    <h3 class="course-intro__item-cate">Category | loại khóa</h3>
+                                    <h2 class="course-intro__item-name">
+                                        Lorem Ipsum dolor sit amet consectetur
+                                    </h2>
+                                    <p class="course-intro__item-lecture">Tên Giảng Viên</p>
+                                    <div class="course-intro__item-price">
+                                        <p>500.000 đ</p>
+                                        <span>1.500.000 đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                                    <div class="img-wrap">
+                                                                                                            <img src="./img/im5.png" alt="">
+                                    </div>                            
+                            <div class="course-intro__item-date">
+                                25/01/2021
+                            </div>
+                        </div>
+                        <div class="course-intro__item">
+                            <div class="course-intro__item-overlay">
+                                <div class="course-intro__item-content">
+                                    <h3 class="course-intro__item-cate">Category | loại khóa</h3>
+                                    <h2 class="course-intro__item-name">
+                                        Lorem Ipsum dolor sit amet consectetur
+                                    </h2>
+                                    <p class="course-intro__item-lecture">Tên Giảng Viên</p>
+                                    <div class="course-intro__item-price">
+                                        <p>500.000 đ</p>
+                                        <span>1.500.000 đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                                    <div class="img-wrap">
+                                                                                                            <img src="./img/im5.png" alt="">
+                                    </div>                            
+                            <div class="course-intro__item-date">
+                                25/01/2021
+                            </div>
+                        </div>
+                        <div class="course-intro__item">
+                            <div class="course-intro__item-overlay">
+                                <div class="course-intro__item-content">
+                                    <h3 class="course-intro__item-cate">Category | loại khóa</h3>
+                                    <h2 class="course-intro__item-name">
+                                        Lorem Ipsum dolor sit amet consectetur
+                                    </h2>
+                                    <p class="course-intro__item-lecture">Tên Giảng Viên</p>
+                                    <div class="course-intro__item-price">
+                                        <p>500.000 đ</p>
+                                        <span>1.500.000 đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                                    <div class="img-wrap">
+                                                                                                            <img src="./img/ig1.png" alt="">
+                                    </div>                            
+                            <div class="course-intro__item-date">
+                                25/01/2021
+                            </div>
+                        </div>
+                        <div class="course-intro__item">
+                            <div class="course-intro__item-overlay">
+                                <div class="course-intro__item-content">
+                                    <h3 class="course-intro__item-cate">Category | loại khóa</h3>
+                                    <h2 class="course-intro__item-name">
+                                        Lorem Ipsum dolor sit amet consectetur
+                                    </h2>
+                                    <p class="course-intro__item-lecture">Tên Giảng Viên</p>
+                                    <div class="course-intro__item-price">
+                                        <p>500.000 đ</p>
+                                        <span>1.500.000 đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                                                            <div class="img-wrap">
+                                                                                                                                    <img src="./img/ig1.png" alt="">
+                                                            </div>
+                            <div class="course-intro__item-date">
+                                25/01/2021
+                            </div>
+                        </div>
+                        <div class="course-intro__item">
+                            <div class="course-intro__item-overlay">
+                                <div class="course-intro__item-content">
+                                    <h3 class="course-intro__item-cate">Category | loại khóa</h3>
+                                    <h2 class="course-intro__item-name">
+                                        Lorem Ipsum dolor sit amet consectetur
+                                    </h2>
+                                    <p class="course-intro__item-lecture">Tên Giảng Viên</p>
+                                    <div class="course-intro__item-price">
+                                        <p>500.000 đ</p>
+                                        <span>1.500.000 đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                                    <div class="img-wrap">
+                                                                                                            <img src="./img/ig1.png" alt="">
+                                    </div>                            
+                            <div class="course-intro__item-date">
+                                25/01/2021
+                            </div>
+                        </div>
+                        <div class="course-intro__item">
+                            <div class="course-intro__item-overlay">
+                                <div class="course-intro__item-content">
+                                    <h3 class="course-intro__item-cate">Category | loại khóa</h3>
+                                    <h2 class="course-intro__item-name">
+                                        Lorem Ipsum dolor sit amet consectetur
+                                    </h2>
+                                    <p class="course-intro__item-lecture">Tên Giảng Viên</p>
+                                    <div class="course-intro__item-price">
+                                        <p>500.000 đ</p>
+                                        <span>1.500.000 đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                                    <div class="img-wrap">
+                                                                                                            <img src="./img/ig1.png" alt="">
+                                    </div>                            
+                            <div class="course-intro__item-date">
+                                25/01/2021
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <section class="category">
+                <div class="container">
+                    <div class="category-container">
+                        <h1 class="section__heading">
+                            Khám phá theo Danh Mục
+                        </h1>
+                        <div class="category__list row g-4">
+                            <div class="category-item col-xl-3 col-sm-4 col-12">
+                                <img src="./img/ig1.png" alt="">
+                                <div class="category-item__info">
+                                    <h3 class="category-item__name">category name</h3>
+                                    <p class="category-item__number">
+                                        Number of courses
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="category-item col-xl-3 col-sm-4 col-12">
+                                <img src="./img/im2.png" alt="">
+                                 <div class="category-item__info">
+                                    <h3 class="category-item__name">category name</h3>
+                                    <p class="category-item__number">
+                                        Number of courses
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="category-item col-xl-3 col-sm-4 col-12">
+                                <img src="./img/im3.png" alt="">
+                                 <div class="category-item__info">
+                                    <h3 class="category-item__name">category name</h3>
+                                    <p class="category-item__number">
+                                        Number of courses
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="category-item col-xl-3 col-sm-4 col-12">
+                                <img src="./img/im4.png" alt="">
+                                 <div class="category-item__info">
+                                    <h3 class="category-item__name">category name</h3>
+                                    <p class="category-item__number">
+                                        Number of courses
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="category-item col-xl-3 col-sm-4 col-12">
+                                <img src="./img/ig1.png" alt="">
+                                 <div class="category-item__info">
+                                    <h3 class="category-item__name">category name</h3>
+                                    <p class="category-item__number">
+                                        Number of courses
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="category-item col-xl-3 col-sm-4 col-12">
+                                <img src="./img/im2.png" alt="">
+                                 <div class="category-item__info">
+                                    <h3 class="category-item__name">category name</h3>
+                                    <p class="category-item__number">
+                                        Number of courses
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="category-item col-xl-3 col-sm-4 col-12">
+                                <img src="./img/im3.png" alt="">
+                                 <div class="category-item__info">
+                                    <h3 class="category-item__name">category name</h3>
+                                    <p class="category-item__number">
+                                        Number of courses
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="category-item col-xl-3 col-sm-4 col-12">
+                                <img src="./img/im4.png" alt="">
+                                 <div class="category-item__info">
+                                    <h3 class="category-item__name">category name</h3>
+                                    <p class="category-item__number">
+                                        Number of courses
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cta">
+                <div class="container">
+                    <div class="cta-container">
+                        <h1 class="cta__heading">
+                            Hướng Dẫn Người Mới
+                        </h1>
+                        <p class="cta__text">
+                            Nếu bạn định sử dụng một đoạn Lorem Ipsum, bạn nên kiểm tra kĩ để chắn chắn là không có gì nhạy cảm được giấu ở giữa đoạn văn bản. 
+                        </p>
+                        <div class="cta__btn-wrap">
+                            <button class="cta__btn">
+                                Tạo khoá học
+                            </button>
+                            <button class="cta__btn">
+                                Đăng kí học
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer__logo">
+                        <img src="../img/header-logo.png" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus egestas elit, at eleifend elit ornare ut.</p>
+                    </div>
+                    <div class="footer__link-wrap">
+                        <ul class="footer__links">
+                            <h3>Company</h3>
+                            <li>Mentor Links</li>
+                            <li>Chính Sách</li>
+                            <li>Đội Ngũ</li>
+                            <li>Cộng Đồng</li>
+                        </ul>
+                        <ul class="footer__links">
+                            <h3>Mentor</h3>
+                            <li>Hướng Dẫn</li>
+                            <li>Chính Sách</li>
+                            <li>Best Seller</li>
+                            <li>Tài liệu</li>
+                        </ul>
+                        <ul class="footer__links">
+                            <h3>Mentee</h3>
+                            <li>Hướng Dẫn</li>
+                            <li>Chính Sách</li>
+                            <li>Best Learners</li>
+                            <li>Top Project</li>
+                        </ul>
+                        <ul class="footer__links">
+                            <h3>Hỗ Trợ</h3>
+                            <li>Liên Hệ</li>
+                            <li>FAQs</li>
+                            <li>Live Chat</li>
+                            
+                        </ul>
+                    </div>
+                    <ul class="footer__links">
+                        <h3>Get Connect</h3>
+                        <li>
+                            <img srcset="./img/tw.png 2x" alt="">
+                            <span>Twitter</span></li>
+                        <li>
+                            <img srcset="./img/fb.png 2x" alt="">
+                            <span>Facebook</span></li>
+                        <li>
+                            <img srcset="./img/db.png 2x" alt="">
+                            <span>Dribble</span></li>
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="copywrite">
+                <div>
+                    <p>Copyright © 2018 Grada. All rights reserved.</p>
+                </div>
+                <div>
+                    <p>Terms & Conditions</p>
+                    <p>Privacy Policy</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

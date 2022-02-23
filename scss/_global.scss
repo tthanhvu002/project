@@ -1,0 +1,55 @@
+body{
+    line-height: 1;
+    font-family: $mont;
+    font-weight: 500;
+    background-color: white;
+}
+.wrapper{
+    max-width: 1730px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.container{
+    max-width: 1484px;
+    /* padding: 0 123px; */
+    margin: 0 auto;
+}
+.section__heading{
+    font-family: $crimson;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: calc(56/44);
+    color: $primary-color;
+    text-align: center;
+    margin: 0 auto;
+}
+.slick-dots button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 100rem;
+    outline: none;
+    border: none;
+    background: rgba(41, 204, 214, 0.25);
+    transition: 0.4s ease-in-out;
+}
+.slick-active button{
+    background-color:$primary-color;
+    width: 10px;
+    height: 10px;
+}
+.slick-track{
+    display: flex;
+}
+.slick-dots{
+    list-style: none;
+    display: flex;
+    gap: 0 10px;
+    position: absolute;
+    left: 50%;
+}
+button{
+    border: none;
+    outline: none;
+}
+

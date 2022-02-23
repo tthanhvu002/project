@@ -1,0 +1,88 @@
+.intro{
+    position: relative;
+    height: 440px;
+    &-container{
+
+    }
+    &__img{
+        height: 100%;
+    }
+    &__img img{
+        height: 100%;
+    }
+    &__overlay{
+        position: absolute;
+        background: linear-gradient(277.43deg, #7DFFD3 0.52%, #29CCD6 20.82%, #150099 99.87%);
+        opacity: 0.5;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    &__content{
+        text-align: center;
+        margin: 0 auto;
+        position: absolute;
+        top: 63px;
+        transform: translateX(-50%);
+        color: #fff;
+        left: 50%;
+    }
+    &__heading{
+        margin: 0 auto;
+        max-width: 410px;
+        font-weight: 600;
+        font-size: 44px;
+        line-height: calc(49/44);
+        font-family: $crimson;
+        margin-bottom: 24px;
+    }
+    &__text{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: calc(17/14);
+        max-width: 534px;
+        margin: 0 auto;
+    }
+    &__btn-wrap{
+        display: flex;
+        gap: 0 20px !important;
+        margin-top: 30px;
+        justify-content: center;
+    }
+    &__btn{
+        padding: 11px 36px;
+        outline: none;
+        border: none;
+        font-size: 13px;
+        line-height: 16px;  
+        text-transform: uppercase;
+        border-radius: 8px;
+    }
+    &__btn.btn1{
+        border: 1px solid #fff;
+        color: #fff;
+        background-color:transparent;
+    }
+    &__btn.btn2{
+        background-color: #fff;
+        color: $primary-color;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .intro{
+        &__heading{
+            font-size: 30px;
+        }
+        &__text{
+            font-size: 10px;
+        }
+        &__btn-wrap{
+            gap: 0 10px !important;
+        }
+        &__btn{
+            font-size: 10px;
+        }
+    }
+}

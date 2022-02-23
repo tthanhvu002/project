@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+     <!-- bs -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!-- slick-slider -->
+     <link
+         rel="stylesheet"
+         type="text/css"
+         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+       />
+     
+ 
+     <!--  -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+     
+     <!-- scss -->
+     <link rel="stylesheet" href="../scss/css/app.css">
+     <link rel="stylesheet" href="./scss/css/app.css">
+</head>
+<body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+            <div class="header-container">
+                <div class="header__logo">
+                    <img src="../img/header-logo.png" alt="logo">
+                </div>
+                <div class="header__nav">
+                    <ul class="menu">
+                        <li class="menu-item">
+                          <a href="#" class="menu-link">Tìm kiếm</a>
+                          <div class="line"></div>
+                        </li>
+                        <li class="menu-item ">
+                        <a href="#" class="menu-link">Về mentor</a>
+                        <div class="line active"></div>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Đăng nhập để dạy</a>
+                            <div class="line"></div>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Đăng nhập để học</a>
+                            <div class="line"></div>
+                        </li>
+                    </ul>
+                    <div class="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="header__avt-wrap">
+                        <img src="./img/headerarrow.png" alt="">
+                        <span>Thu Nguyễn</span>
+                        <div class="header__avt">
+                          <img src="./img/headeravt.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+      <main>
+        <section class="head-image">
+          <h1 class="head-image__heading">
+            Hồ Sơ Học Viên
+          </h1>
+          
+        </section>
+        <section class="profile">
+          <div class="container">
+            <div class="profile-container row">
+              <div class="col-lg-4 col-md-12 mb-flex">
+                <p class="text mb-44">Thông Tin Cá Nhân</p>
+                <div class="profile__img-wrap">
+                  <img src="./img/avt.png" alt="">
+                </div>
+                <button class="profile__btn">sửa avatar</button>
+              </div>
+              <div class="col-lg-8 col-md-12">
+                <div class="input-wrap">
+                  <span>Mã Học Viên</span>
+                  <p class="mentee-code">ABC122</p>
+                </div>
+                <div class="input-wrap">
+                  <span>Họ Tên</span>
+                  <div class="input-box s-color">
+                    <div class="input-box__decor s-color"></div>
+                    <input type="text" placeholder="Type here...">
+                    <p class="error-mess">
+                      Field Instructions go right here
+                    </p>
+                  </div>
+                  
+                </div>
+                <div class="input-wrap">
+                  <span>Địa chỉ</span>
+                  <div class="select-group">
+                    <select name="" id="">
+                      <option value="">Quốc gia</option>
+                    </select>
+                    <select name="" id="">
+                      <option value="">Tỉnh thành</option>
+                    </select>
+                    <select name="" id="">
+                      <option value="">Quận huyện</option>
+                    </select>
+                    <p>Vui lòng chọn từ danh sách</p>
+                  </div>
+                </div>
+                <div class="input-wrap position-relative">
+                  <span>Số điện thoại</span>
+                  <div class="d-flex align-items-center g-20">
+                      <div class="input-box p-color">
+                          <div class="input-box__decor p-color"></div>
+                        <input type="text" placeholder="0123456789">
+                        
+                      </div>
+                      <p class="notice">Số điện thoại bạn cung cấp nhằm giúp MentorLinks xác thực danh tính của bạn và nâng cao trải nghiệm của bạn tại hệ thống. MentorLinks không công khai số điện thoại của bạn trừ khi được cho phép.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-12 profile-input-row mt-150">
+                <p class="label">
+                  Giới thiệu ngắn
+                </p>
+                <div class="input-wrap-nf">
+                  <p>Gợi ý giới thiệu về bản thân</p>
+                  <textarea name="" id="">Enter your text here...</textarea>
+                  <p>180 Charactors Left</p>
+                </div>
+              </div>
+              <div class="col-lg-12 profile-input-row">
+                <p class="label">
+                  Nghề nghiệp
+                </p>
+                <div class="input-wrap-nf">
+                  <div class="select-wrap">
+                    <select name="" id="">
+                      <option value="">Sinh viên</option>
+                    </select>
+                    <p>Vui lòng chọn 1 nghề nghiệp</p>
+                  </div>
+                  <div class="select-wrap">
+                    <input type="text" placeholder="Nhập tên trường">
+                    <p>Ví dụ: Trường Đại Học Sài Gòn</p>
+                  </div>
+                  <div class="select-wrap">
+                    <input type="text" placeholder="Nhập mã số sinh viên">
+                    <p>Ví dụ: TDHSG123</p>
+                  </div>
+                  <div class="d-flex">
+                    <div class="select-wrap">
+                      <select name="" id="">
+                        <option value="">Ngành học</option>
+                      </select>
+                      <p>Vui lòng chọn 1 ngành</p>
+                    </div>
+                    <div class="select-wrap">
+                      <select name="" id="">
+                        <option value="">
+                          Năm học
+                        </option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                      </select>
+                      <p>Bạn là sinh viên năm mấy</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 profile-input-row align-items-center">
+                <p class="label">
+                  Kiến thức & kỹ năng muốn cải thiện
+                </p>
+                <div class="option-group">
+                  <div class="select-item ">
+                    <img srcset="./img/Vector.png 2x" alt="">
+                    Giáo Dục
+                  </div>
+                  <div class="select-item ">
+                    <img srcset="./img/Vector.png 2x" alt="">
+  
+                    Sức Khoẻ
+                  </div>
+                  <div class="select-item">
+                    <img srcset="./img/Vector.png 2x" alt="">
+
+                    Kinh Doanh
+                  </div>
+                  <div class="select-item">
+                    <img srcset="./img/Vector.png 2x" alt="">
+
+                    Phát Triển Bản Thân
+                  </div>
+              </div>
+              
+              </div>
+              <div class="col-lg-12 profile-input-row">
+                <span class="label">Chuyên môn cụ thể</span>
+                <div class="select-skill-group">
+                  <!-- <div class="select-skill-item">
+                    <img srcset="./img/remove.png 2x" alt="">
+                    Tiếng Hoa
+                  </div> -->
+                </div>
+              </div>
+              <div class="col-lg-12 profile-input-row justify-content-center flex-wrap d-flex">
+                <div class="dropdown-section shadow">
+                  <div class="dropdown-section__heading">
+                    <h3>Giáo dục</h3>
+                  </div>
+                  <div class="dropdown-group">
+                    <div class="d-flex">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="c1" checked>
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="c1">Ngoại Ngữ</label>
+                            </div>
+                        </div>
+                      </div>
+                      <img srcset="./img/up.png 2x" alt="">
+                    </div> 
+                    <div class="sub-dropdown-group">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="eng">
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="eng">Tiếng Anh</label>
+                            </div>
+                        </div>
+                      </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="chinese">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="chinese">Tiếng Trung</label>
+                              </div>
+                          </div>
+
+                        </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="kor">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="kor">Tiếng Hàn</label>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="dropdown-group">
+                    <div class="d-flex">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="c2" checked>
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="c2">Khoa Học Tự Nhiên</label>
+                            </div>
+                        </div>
+                      </div>
+                      <img srcset="./img/up.png 2x" alt="">
+                    </div> 
+                    <div class="sub-dropdown-group">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="math">
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="math">Toán</label>
+                            </div>
+                        </div>
+                      </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="ly">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="ly">Lý</label>
+                              </div>
+                          </div>
+
+                        </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="che">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="che">Hoá</label>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="dropdown-group">
+                    <div class="d-flex">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="c3" checked>
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="c3">Kinh Tế</label>
+                            </div>
+                        </div>
+                      </div>
+                      <img srcset="./img/up.png 2x" alt="">
+                    </div> 
+                    <div class="sub-dropdown-group">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="manage">
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="manage">Management</label>
+                            </div>
+                        </div>
+                      </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="marketing">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="marketing">Marketing</label>
+                              </div>
+                          </div>
+
+                        </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="acc">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="acc">Accounting</label>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="fi">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="fi">Finance & Banking</label>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="dropdown-group">
+                    <div class="d-flex">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="c4" checked>
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="c4">Kỹ Thuật</label>
+                            </div>
+                        </div>
+                      </div>
+                      <img srcset="./img/up.png 2x" alt="">
+                    </div> 
+                    <div class="sub-dropdown-group">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="lorem1">
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="lorem1">lorem1</label>
+                            </div>
+                        </div>
+                      </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="lorem2">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="lorem2">lorem2</label>
+                              </div>
+                          </div>
+
+                        </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="lorem3">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="lorem3">lorem3</label>
+                              </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                  </div>
+                  <div class="dropdown-group">
+                    <div class="d-flex">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="c5" checked>
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="c5">Thiết Kế</label>
+                            </div>
+                        </div>
+                      </div>
+                      <img srcset="./img/up.png 2x" alt="">
+                    </div> 
+                    <div class="sub-dropdown-group">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="lorem4">
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="lorem4">lorem4</label>
+                            </div>
+                        </div>
+                      </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="lorem5">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="lorem5">lorem5</label>
+                              </div>
+                          </div>
+
+                        </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="lorem5">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="lorem5">lorem5</label>
+                              </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                  </div>
+                  <div class="dropdown-group">
+                    <div class="d-flex">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="c6" checked>
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="c6">Nghệ Thuật</label>
+                            </div>
+                        </div>
+                      </div>
+                      <img srcset="./img/up.png 2x" alt="">
+                    </div> 
+                    <div class="sub-dropdown-group">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="lorem7">
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="lorem7">lorem7</label>
+                            </div>
+                        </div>
+                      </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="lorem8">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="lorem8">lorem8</label>
+                              </div>
+                          </div>
+
+                        </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="lorem9">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="lorem9">lorem9</label>
+                              </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                  </div>
+                  <div class="dropdown-group">
+                    <div class="d-flex">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="c15" checked>
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="l15">Luật</label>
+                            </div>
+                        </div>
+                      </div>
+                      <img srcset="./img/up.png 2x" alt="">
+                    </div> 
+                    <div class="sub-dropdown-group">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="l14">
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="l14">lorem14</label>
+                            </div>
+                        </div>
+                      </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="lorem15">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="lorem15">lorem15</label>
+                              </div>
+                          </div>
+
+                        </div>
+                        
+                        
+                      </div>
+                  </div>
+                  <div class="dropdown-group">
+                    <div class="d-flex">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="c11" checked>
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="c11">Khác</label>
+                            </div>
+                        </div>
+                      </div>
+                      <img srcset="./img/up.png 2x" alt="">
+                    </div> 
+                    <div class="sub-dropdown-group">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="l11">
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="l11">lorem11</label>
+                            </div>
+                        </div>
+                      </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="lorem12">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="lorem12">lorem12</label>
+                              </div>
+                          </div>
+
+                        </div>
+                        
+                        
+                      </div>
+                  </div>
+                </div>
+                <div class="dropdown-section shadow">
+                  <div class="dropdown-section__heading">
+                    <h3>sức khoẻ</h3>
+                  </div>
+                  <div class="dropdown-group">
+                    <div class="d-flex">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="d1">
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="d1">Thể Dục Mind Body</label>
+                            </div>
+                        </div>
+                      </div>
+                      <img srcset="./img/up.png 2x" alt="">
+                    </div> 
+                    <div class="sub-dropdown-group">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="d1a">
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="d1a">loremd1a</label>
+                            </div>
+                        </div>
+                      </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="d1b">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="d1b">loremd1b</label>
+                              </div>
+                          </div>
+
+                        </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="d1c">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="d1c">loremd1c</label>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="dropdown-group">
+                    <div class="d-flex">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="d2" checked>
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="d2">Thể Dục Thể Thao</label>
+                            </div>
+                        </div>
+                      </div>
+                      <img srcset="./img/up.png 2x" alt="">
+                    </div> 
+                    <div class="sub-dropdown-group">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="d2a">
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="d2a">loremd2a</label>
+                            </div>
+                        </div>
+                      </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="d2b">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="d2b">loremd2b</label>
+                              </div>
+                          </div>
+
+                        </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="d2c">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="d2c">loremd2c</label>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="dropdown-group">
+                    <div class="d-flex">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="d3" checked>
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="d3">Dinh Dưỡng</label>
+                            </div>
+                        </div>
+                      </div>
+                      <img srcset="./img/up.png 2x" alt="">
+                    </div> 
+                    <div class="sub-dropdown-group">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="d3a">
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="d3a">loremd3a</label>
+                            </div>
+                        </div>
+                      </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="d3b">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="d3b">loremd3b</label>
+                              </div>
+                          </div>
+
+                        </div>
+                        
+                        
+                      </div>
+                  </div>
+                  <div class="dropdown-group">
+                    <div class="d-flex">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="d4" checked>
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="d4">Làm Đẹp</label>
+                            </div>
+                        </div>
+                      </div>
+                      <img srcset="./img/up.png 2x" alt="">
+                    </div> 
+                    <div class="sub-dropdown-group">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="d4a">
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="d4a">loremd4a</label>
+                            </div>
+                        </div>
+                      </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="d4b">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="loremd4b">loremd4b</label>
+                              </div>
+                          </div>
+
+                        </div>
+                        
+                        
+                      </div>
+                  </div>
+                  <div class="dropdown-group">
+                    <div class="d-flex">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="d5" checked>
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="d5">Sống Xanh</label>
+                            </div>
+                        </div>
+                      </div>
+                      <img srcset="./img/up.png 2x" alt="">
+                    </div> 
+                    <div class="sub-dropdown-group">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="d5a">
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="d5a">loremd5a</label>
+                            </div>
+                        </div>
+                      </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="d5b">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="d5b">loremd5b</label>
+                              </div>
+                          </div>
+
+                        </div>
+                        
+                      </div>
+                  </div>
+                  <div class="dropdown-group">
+                    <div class="d-flex">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="d6" checked>
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="d6">Khác</label>
+                            </div>
+                        </div>
+                      </div>
+                      <img srcset="./img/up.png 2x" alt="">
+                    </div> 
+                    <div class="sub-dropdown-group">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="d6a">
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="d6a">loremd6a</label>
+                            </div>
+                        </div>
+                      </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="d6b">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="d6b">loremd6b</label>
+                              </div>
+                          </div>
+
+                        </div>
+                        
+                        
+                      </div>
+                  </div>
+                </div>
+                <div class="dropdown-section shadow">
+                  <div class="dropdown-section__heading">
+                    <h3>Kinh Doanh</h3>
+                  </div>
+                  <div class="dropdown-group">
+                    <div class="d-flex">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="e1">
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="e1">loreme1</label>
+                            </div>
+                        </div>
+                      </div>
+                      <img srcset="./img/up.png 2x" alt="">
+                    </div> 
+                    <div class="sub-dropdown-group">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="e1a">
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="e1a">loreme1a</label>
+                            </div>
+                        </div>
+                      </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="e1b">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="e1b">loremd1b</label>
+                              </div>
+                          </div>
+
+                        </div>
+                        
+                      </div>
+                  </div>
+                  <div class="dropdown-group">
+                    <div class="d-flex">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="e2" checked>
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="e2">loreme2</label>
+                            </div>
+                        </div>
+                      </div>
+                      <img srcset="./img/up.png 2x" alt="">
+                    </div> 
+                    <div class="sub-dropdown-group">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="e2a">
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="e2a">loremd2a</label>
+                            </div>
+                        </div>
+                      </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="e2b">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="e2b">loremd2b</label>
+                              </div>
+                          </div>
+
+                        </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="e2c">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="e2c">loremd2c</label>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="dropdown-group">
+                    <div class="d-flex">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="e3" checked>
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="e3">loreme3</label>
+                            </div>
+                        </div>
+                      </div>
+                      <img srcset="./img/up.png 2x" alt="">
+                    </div> 
+                    <div class="sub-dropdown-group">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="e3a">
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="e3a">loremd3a</label>
+                            </div>
+                        </div>
+                      </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="e3b">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="e3b">loremd3b</label>
+                              </div>
+                          </div>
+
+                        </div>
+                        
+                        
+                      </div>
+                  </div>
+                  
+                </div>
+                <div class="dropdown-section shadow">
+                  <div class="dropdown-section__heading">
+                    <h3>Phát Triển Bản Thân</h3>
+                  </div>
+                  <div class="dropdown-group">
+                    <div class="d-flex">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="f1">
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="f1">loreme1</label>
+                            </div>
+                        </div>
+                      </div>
+                      <img srcset="./img/up.png 2x" alt="">
+                    </div> 
+                    <div class="sub-dropdown-group">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="f1a">
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="f1a">loremf1a</label>
+                            </div>
+                        </div>
+                      </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="f1b">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="f1b">loremd1b</label>
+                              </div>
+                          </div>
+
+                        </div>
+                        
+                      </div>
+                  </div>
+                  <div class="dropdown-group">
+                    <div class="d-flex">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="f2" checked>
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="f2">loreme2</label>
+                            </div>
+                        </div>
+                      </div>
+                      <img srcset="./img/up.png 2x" alt="">
+                    </div> 
+                    <div class="sub-dropdown-group">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="f2a">
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="f2a">loremd2a</label>
+                            </div>
+                        </div>
+                      </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="f2b">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="f2b">loremd2b</label>
+                              </div>
+                          </div>
+
+                        </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="f2c">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="f2c">loremd2c</label>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="dropdown-group">
+                    <div class="d-flex">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="f3" checked>
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="f3">loremf3</label>
+                            </div>
+                        </div>
+                      </div>
+                      <img srcset="./img/up.png 2x" alt="">
+                    </div> 
+                    <div class="sub-dropdown-group">
+                      <div class="checkbox-group">
+                        <div class="form-group">
+                            <input type="checkbox" id="f3a">
+                            <div class="custom-checkbox">
+                              <div>
+                                <span class="checkbox"></span>
+                                <span class="checkmark"></span> 
+                              </div>
+                              <label for="f3a">loremd3a</label>
+                            </div>
+                        </div>
+                      </div>
+                        <div class="checkbox-group">
+                          <div class="form-group">
+                              <input type="checkbox" id="f3b">
+                              <div class="custom-checkbox">
+                                <div>
+                                  <span class="checkbox"></span>
+                                  <span class="checkmark"></span>
+                                </div>
+                                <label for="f3b">loremd3b</label>
+                              </div>
+                          </div>
+
+                        </div>
+                        
+                        
+                      </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="profile-btn-wrap">
+              <button class="btn">lưu nháp</button>
+              <button class="btn bg">đăng</button>
+            </div>
+                
+          </div>
+            
+        </section>
+        
+      </main>
+      <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer__logo">
+                    <img src="../img/header-logo.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus egestas elit, at eleifend elit ornare ut.</p>
+                </div>
+                <div class="footer__link-wrap">
+                    <ul class="footer__links">
+                        <h3>Company</h3>
+                        <li>Mentor Links</li>
+                        <li>Chính Sách</li>
+                        <li>Đội Ngũ</li>
+                        <li>Cộng Đồng</li>
+                    </ul>
+                    <ul class="footer__links">
+                        <h3>Mentor</h3>
+                        <li>Hướng Dẫn</li>
+                        <li>Chính Sách</li>
+                        <li>Best Seller</li>
+                        <li>Tài liệu</li>
+                    </ul>
+                    <ul class="footer__links">
+                        <h3>Mentee</h3>
+                        <li>Hướng Dẫn</li>
+                        <li>Chính Sách</li>
+                        <li>Best Learners</li>
+                        <li>Top Project</li>
+                    </ul>
+                    <ul class="footer__links">
+                        <h3>Hỗ Trợ</h3>
+                        <li>Liên Hệ</li>
+                        <li>FAQs</li>
+                        <li>Live Chat</li>
+                        
+                    </ul>
+                </div>
+                <ul class="footer__links">
+                    <h3>Get Connect</h3>
+                    <li>
+                        <img srcset="./img/tw.png 2x" alt="">
+                        <span>Twitter</span></li>
+                    <li>
+                        <img srcset="./img/fb.png 2x" alt="">
+                        <span>Facebook</span></li>
+                    <li>
+                        <img srcset="./img/db.png 2x" alt="">
+                        <span>Dribble</span></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+        <div class="copywrite">
+            <div>
+                <p>Copyright © 2018 Grada. All rights reserved.</p>
+            </div>
+            <div>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

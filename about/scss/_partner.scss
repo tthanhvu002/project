@@ -1,0 +1,11 @@
+.partner{
+    padding-top: 89px;
+    padding-bottom: 95px;
+    &__list{
+        margin-top: 37px;
+        display: flex;
+        justify-content: center;
+        gap: 0 47px !important;
+        flex-wrap: wrap;
+    }
+}
